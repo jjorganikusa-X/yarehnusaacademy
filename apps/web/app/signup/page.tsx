@@ -53,7 +53,7 @@ export default function SignupPage() {
         <div className="text-center mb-8">
           <div className="flex justify-center mb-4">
             <img 
-              src="https://app-cdn.appgen.com/d1d0bb23-e871-43d1-8694-ea0013947282/assets/uploaded_1772030079258_11ynf.jpeg" 
+              src="https://app-cdn.appgen.com/d1d0bb23-e871-43d1-8694-ea0013947282/assets/uploaded_1772030996935_ggozep.jpeg" 
               alt="Yarehnusa Academy Logo" 
               className="w-32 h-32 object-contain"
             />
