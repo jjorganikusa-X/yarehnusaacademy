@@ -9,7 +9,7 @@ export default function BottomNav() {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 w-full bg-white/95 backdrop-blur-md border-t border-slate-200 z-50 pb-[max(25px,env(safe-area-inset-bottom))]">
+    <nav className="fixed bottom-0 left-0 right-0 w-full bg-white backdrop-blur-md border-t border-primary/10 z-50 pb-[max(25px,env(safe-area-inset-bottom))] shadow-[0_-4px_20px_rgba(26,40,71,0.08)]">
       <div className="w-full">
         <div className="grid grid-cols-5 w-full pt-3">
           {/* Tab 1: Home */}
@@ -20,7 +20,7 @@ export default function BottomNav() {
             } transition-colors`}
           >
             {isActive('/') && (
-              <div className="absolute -top-3 w-8 h-1 bg-primary rounded-b-full shadow-sm shadow-primary/30"></div>
+              <div className="absolute -top-3 w-8 h-1 bg-secondary rounded-b-full shadow-glow"></div>
             )}
             <i className={`${isActive('/') ? 'ph-fill' : 'ph'} ph-house text-[26px]`}></i>
             <span className={`text-[9px] ${isActive('/') ? 'font-bold' : 'font-medium'} leading-none tracking-wide`}>
@@ -36,7 +36,7 @@ export default function BottomNav() {
             } transition-colors`}
           >
             {isActive('/visual-schedule') && (
-              <div className="absolute -top-3 w-8 h-1 bg-primary rounded-b-full shadow-sm shadow-primary/30"></div>
+              <div className="absolute -top-3 w-8 h-1 bg-secondary rounded-b-full shadow-glow"></div>
             )}
             <i className={`${isActive('/visual-schedule') ? 'ph-fill' : 'ph'} ph-calendar-check text-[26px]`}></i>
             <span className={`text-[9px] ${isActive('/visual-schedule') ? 'font-bold' : 'font-medium'} leading-none text-center`}>
@@ -52,7 +52,7 @@ export default function BottomNav() {
             } transition-colors`}
           >
             {isActive('/aac-communication') && (
-              <div className="absolute -top-3 w-8 h-1 bg-primary rounded-b-full shadow-sm shadow-primary/30"></div>
+              <div className="absolute -top-3 w-8 h-1 bg-secondary rounded-b-full shadow-glow"></div>
             )}
             <i className={`${isActive('/aac-communication') ? 'ph-fill' : 'ph'} ph-chat-circle-dots text-[26px]`}></i>
             <span className={`text-[9px] ${isActive('/aac-communication') ? 'font-bold' : 'font-medium'} leading-none text-center`}>
@@ -68,7 +68,7 @@ export default function BottomNav() {
             } transition-colors`}
           >
             {isActive('/social-stories') && (
-              <div className="absolute -top-3 w-8 h-1 bg-primary rounded-b-full shadow-sm shadow-primary/30"></div>
+              <div className="absolute -top-3 w-8 h-1 bg-secondary rounded-b-full shadow-glow"></div>
             )}
             <i className={`${isActive('/social-stories') ? 'ph-fill' : 'ph'} ph-book-bookmark text-[26px]`}></i>
             <span className={`text-[9px] ${isActive('/social-stories') ? 'font-bold' : 'font-medium'} leading-none text-center`}>
@@ -84,7 +84,7 @@ export default function BottomNav() {
             } transition-colors`}
           >
             {isActive('/focus-mode') && (
-              <div className="absolute -top-3 w-8 h-1 bg-primary rounded-b-full shadow-sm shadow-primary/30"></div>
+              <div className="absolute -top-3 w-8 h-1 bg-secondary rounded-b-full shadow-glow"></div>
             )}
             <i className={`${isActive('/focus-mode') ? 'ph-fill' : 'ph'} ph-lighthouse text-[26px]`}></i>
             <span className={`text-[9px] ${isActive('/focus-mode') ? 'font-bold' : 'font-medium'} leading-none text-center`}>
